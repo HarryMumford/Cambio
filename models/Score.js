@@ -1,8 +1,8 @@
 // models/Score.js
 
-import { Schema, model } from 'mongoose';
+const mongoose = require('mongoose');
 
-const ScoreSchema = new Schema({
+const ScoreSchema = new mongoose.Schema({
   user: {
     type: String,
     required: true
@@ -13,4 +13,4 @@ const ScoreSchema = new Schema({
   },
 });
 
-export default Score = model('score', ScoreSchema);
+module.exports = Score = mongoose.model('Score', ScoreSchema);

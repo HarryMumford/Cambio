@@ -1,10 +1,11 @@
 // routes/api/scores.js
+console.log('in core routes')
 
 const express = require('express');
 const router = express.Router();
 
 // Load Score model
-const Score = require('../../models/Score');
+const Score = require('../../models/Score').default;
 
 // @route GET api/scores/test
 // @description tests scores route

@@ -19,11 +19,13 @@ class Score extends Component {
     }
 
     axios
-      .post('http://localhost8082/api/score', data)
+      .post('http://localhost:8082/scores', data)
       .then(res => {
-        console.log('hello m8')
+        console.log(res)
       })
       .catch(err => {
+        console.log(data)
+        console.log(err)
         console.log("Error in Score!");
       })
   }
@@ -31,6 +33,7 @@ class Score extends Component {
   render() {  
     return (
       <>
+        
         <button value='score' onClick={this.createScore}>Score</button>
       </>
     )

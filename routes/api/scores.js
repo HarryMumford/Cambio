@@ -5,7 +5,7 @@ const express = require('express');
 const router = express.Router();
 
 // Load Score model
-const Score = require('../../models/Score').default;
+const Score = require('../../models/Score')
 
 // @route GET api/scores/test
 // @description tests scores route

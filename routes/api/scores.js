@@ -1,5 +1,4 @@
 // routes/api/scores.js
-console.log('in core routes')
 
 const express = require('express');
 const router = express.Router();

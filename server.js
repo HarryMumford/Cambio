@@ -5,7 +5,7 @@ const connectDB = require('./config/db');
 var cors = require('cors');
 
 // routes
-const scores = require('./routes/api/scores');
+const scores = require('./routes/api/scores')
 
 const server = express();
 
@@ -18,7 +18,7 @@ server.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 server.use(express.json({ extended: false }));
 
-server.get('/', (req, res) => res.send('Hello world!'));
+server.get('/', (req, res) => res.send('Api root'));
 
 // use Routes
 server.use('/scores', scores);

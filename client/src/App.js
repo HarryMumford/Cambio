@@ -11,7 +11,7 @@ class App extends Component{
       <Router>
         <>
           <Route exact path='/' component={Score} />
-          <button onClick={player.endTurn}>End turn</button>
+          {player.isTurn && <button onClick={player.endTurn}>End turn</button>}
           {player.turnStatus}
         </>
       </Router>

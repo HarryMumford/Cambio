@@ -7,3 +7,7 @@ workflows:
   heroku_deploy:
     jobs:
       - heroku/deploy-via-git
+       filters:
+             branches:
+               only: master # only run deploy-via-git job on master branch
+

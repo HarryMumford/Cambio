@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Player from './models/Player'
+
+const player = Player.create({
+  name: "Harry",
+  starting_cards: 4,
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App player={player} />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -5,13 +5,14 @@ import Score from './components/Score';
 
 class App extends Component{
   render() {
+    const { player } = this.props
     return (
       <Router>
         <>
           <Route exact path='/' component={Score} />
+          {player.turnStatus}
         </>
       </Router>
-    
     )
   }
 }

@@ -1,3 +1,5 @@
+*A potential re-skin idea*
+
 ## Description
 Based on the card game, Cambio, this is a memory based game involving the movement of shipping truckloads.
 

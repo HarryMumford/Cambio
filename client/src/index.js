@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Player from './models/Player'
+import io from 'socket.io-client';
+
+io('localhost:8082')
+
 
 const player = Player.create({
   name: "Harry",
